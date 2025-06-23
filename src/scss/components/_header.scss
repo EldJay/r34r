@@ -1,0 +1,25 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:50px;
+}
+.header-nav{
+  word-spacing: 50px;
+  margin-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.header-icon{
+  margin-left: 200px;
+  text-align: right;
+  word-spacing: 50px;
+}
+
+.logo{
+  margin-right: 0;
+  font-size: 33px;
+  font-weight: bold;
+  margin-right: 200px;
+}
