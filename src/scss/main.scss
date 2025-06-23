@@ -12,7 +12,12 @@
 // ==== 4. Components ====
 @use 'components/button';
 @use 'components/card';
+@use 'components/header';
 
 body {
   background-color: var(--main-color);
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+
 }

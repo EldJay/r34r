@@ -1,0 +1,26 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.header-nav{
+  word-spacing: 50px;
+  margin-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.logo-text{
+  font-size: 33px;
+  font-weight: bold;
+  margin-right: 200px;
+}
+
+
+.header-icon{
+  margin-left: 200px;
+  text-align: right;
+  word-spacing: 50px;
+}
