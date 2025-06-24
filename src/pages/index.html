@@ -15,18 +15,104 @@
 <div class="banner">
     <div class="text-overlay">
         <div class="subtitle">New Arrival</div>
-        <h2 class="title">Discover Our New Collection</h2>
+        <h2 class="title">Discover Our <br>New Collection</h2>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
         @@include('./_button.html', {
         "padding-x": "72px",
         "padding-y": "25px",
-        "border-radius": "0px",
-        "tittle": "Buy now",
-        "color": "var(--primary-color)",
+        "border-color": "none",
+        "tittle": "<b>BUY NOW",
+        "background-color": "#ffb700;",
         "font-size": "16px",
         })
     </div>
-
 </div>
+<div class="Browse">
+    <h1>Browse The Range</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+</div>
+<div class="ThreePhoto">
+    <img src="/assets/images/image-living room.webp">
+    <img src="/assets/images/Dining.webp">
+    <img src="/assets/images/bedroom.webp">
+</div>
+<div class="rooms">
+    <p>Dining Living Bedroom</p>
+</div>
+<h1 class="ProductsText">Our Products</h1>
+<div class="ShowMore">
+@@include('./_button.html', {
+"padding-x": "90px",
+"padding-y": "18px",
+"border-radius": "0px",
+"tittle": "Show More",
+"color": "#ffb700",
+"font-size": "16px",
+"border-color": "#ffb700",
+})
+</div>
+
+
+    <div class="inspiration-section">
+        <div class="content-block">
+            <div class="text-content">
+                <div class="section-title">
+                    50+ Beautiful rooms <br> inspiration
+                </div>
+                <div class="section-description">
+                    Our designer already made a lot of beautiful <br> prototipe of rooms that inspire you
+                </div>
+            </div>
+            <div class="cta-button">
+                @@include('./_button.html', {
+                "padding-x": "62px",
+                "padding-y": "20px",
+                "border-radius": "0px",
+                "tittle": "<b>Explore More</b>",
+                "background-color": "#ffb700",
+                "font-size": "16px",
+                "border-color": "#ffb700",
+                "color": "white",
+                })
+            </div>
+        </div>
+        <div class="room-card">
+            <div class="card-wrapper">
+                <div class="card-content">
+                    <div class="room-category">
+                        01 - Bed Room
+                    </div>
+                    <div class="room-title">
+                        Inner Peace
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions">
+                <div class="card-button">
+                    @@include('./_button.html', {
+                    "padding-x": "20px",
+                    "padding-y": "15px",
+                    "border-radius": "0px",
+                    "tittle": "➜",
+                    "background-color": "#ffb700",
+                    "font-size": "16px",
+                    "border-color": "#ffb700",
+                    "color": "white",
+                    })
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="main-image">
+                <img src="/assets/images/beati1.webp" alt="Main room inspiration">
+            </div>
+            <div class="secondary-image">
+                <img src="/assets/images/beauti2.webp" alt="Secondary room inspiration">
+            </div>
+        </div>
+    </div>
+
+@@include('../components/_footer.html', {
+})
 </body>
 </html>

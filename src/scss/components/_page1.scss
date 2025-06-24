@@ -1,44 +1,159 @@
 .banner {
   position: relative;
   width: 100%;
-  max-width: 1440px; /* Можно регулировать ширину */
-  height: 1000px; /* Высота блока */
+  max-width: 1440px;
+  height: 1000px;
   margin: 0 auto;
   background-image: url("/assets/images/background interier-lg.webp");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   color: #ffb700;
 }
 
 .text-overlay {
-  background-color: #f6f3de; /* Полупрозрачный черный фон */
+  background-color: #f6f3de;
   padding: 40px;
   max-width: 500px;
-  text-align: center;
+  text-align: left;
   border-radius: 8px;
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 2px;
-  text-transform: uppercase;
   margin-bottom: 10px;
   color: black;
 }
 
 .title {
-  font-size: 36px;
+  font-size: 46px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 25px;
   color: black;
 }
 
+.ShowMore{
+  text-align: center;
+}
+
+.Browse{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.Browse h2{
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.ThreePhoto{
+  justify-content: center;
+  display: flex;
+  gap: 20px
+}
+
+.rooms{
+  text-align: center;
+  word-spacing: 330px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.ProductsText{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.inspiration-section {
+  margin-top: 50px;
+  display: flex;
+  background-color: #FCF8F3;
+  position: relative;
+
+  .content-block {
+    margin-left: 360px;
+    margin-top: 200px;
+
+    .section-title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
+
+    .section-description {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: #666666;
+      margin-top: 20px;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+    }
+  }
+
+  .room-card {
+    position: absolute;
+    right: 750px;
+    top: 80%;
+    transform: translateY(-30%);
+    z-index: 2;
+    display: flex;
+
+    .card-content {
+      background-color: rgba(255, 255, 255, 0.75);
+      width: 237px;
+      height: 90px;
+      padding: 20px;
+
+      .room-category {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: #666666;
+      }
+
+      .room-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 0%;
+      }
+    }
+
+    .card-button {
+      margin-top: 77px;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    gap: 35px;
+    margin-top: 25px;
+
+    .main-image {
+      margin-left: 50px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .secondary-image {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
