@@ -5,8 +5,8 @@
   position: relative;
   overflow: hidden;
 
-  p {
-    margin: 0;
+  .hover-icons{
+    padding-top: 30px;
   }
 
   .circle {
@@ -19,12 +19,14 @@
     justify-content: center;
     position: absolute;
     left: 210px;
-    margin-top: 20px;
+    top: 20px;
     font-size: 16px;
+    font-weight: lighter;
     z-index: 2;
     transition: opacity 0.3s ease;
+    background-color: #ff6161;
+    opacity: 0;
   }
-
 
   .title {
     font-size: 24px;
@@ -35,7 +37,8 @@
   .text {
     font-size: 16px;
     color: var(--cardtext-color);
-    padding:8px;
+    padding: 8px;
+    color: #666666;
   }
 
   .price {
@@ -43,14 +46,14 @@
     font-weight: bold;
     display: flex;
     align-items: center;
-    padding:8px;
-
+    padding: 8px;
     .sale {
       font-size: 16px;
       color: var(--cardtext-color);
       text-decoration: line-through;
       font-weight: normal;
       padding-left: 20px;
+      color: #666666;
     }
   }
 
@@ -98,18 +101,11 @@
     box-sizing: border-box;
 
     .hover-button {
-      background-color: white;
-      color: var(--primary-color);
-      padding: 12px 24px;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
       margin-bottom: 15px;
       width: 160px;
     }
 
     .hover-icons {
-
       display: flex;
       gap: 15px;
       justify-content: center;

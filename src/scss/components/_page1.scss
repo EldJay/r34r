@@ -108,7 +108,7 @@
   .room-card {
     position: absolute;
     right: 750px;
-    top: 80%;
+    top: 75%;
     transform: translateY(-30%);
     z-index: 2;
     display: flex;
@@ -157,3 +157,16 @@
     }
   }
 }
+
+.FurniroText{
+  text-align: center;
+  margin-top: 50px;
+}
+
+  .cards{
+  display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+

@@ -80,8 +80,8 @@
   border: 1px solid #ddd;
   font-size: 14px;
   margin-bottom: 10px;
-  border: none; /* Убираем все границы */
-  border-bottom: 2px solid #000000; /* Добавляем только нижнюю рамку */
+  border: none;
+  border-bottom: 2px solid #000000;
 }
 
 .newsletter-form button {
@@ -89,8 +89,8 @@
   height: 42px;
   margin-left: 10px;
   color: black;
-  border: none; /* Убираем все границы */
-  border-bottom: 2px solid #000000; /* Добавляем только нижнюю рамку */
+  border: none;
+  border-bottom: 2px solid #000000;
   cursor: pointer;
   font-size: 14px;
   transition: all 0.3s ease;
@@ -98,7 +98,7 @@
 
 .newsletter-form button:hover {
   background-color: #9f9f9f;
-  border-bottom-color: #c5c5c5; /* Цвет рамки при наведении */
+  border-bottom-color: #c5c5c5;
 }
 
 .footer-copyright {
