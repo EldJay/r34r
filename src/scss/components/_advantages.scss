@@ -1,0 +1,27 @@
+.vstavka{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background-color:#FAF3EA;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .vstavka_one{
+    display: flex;
+    .vstavka_one_text{
+      margin-left: 5px;
+      .vstavka_one_text_one{
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 150%;
+        letter-spacing: 0%;
+      }
+      .vstavka_one_text_two{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: #666666;
+      }
+    }
+  }
+}

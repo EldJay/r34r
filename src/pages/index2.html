@@ -1,17 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/page2.css" />
-    <title>Document</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/page2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 @@include('../components/_header.html', {
 })
+@@include('../components/_navigate.html', {
+"title": "Shop",
+"text": "Shop",
+"opacity": "0"
+})
+
+<div class="toolbar">
+    <div class="left-section">
+        <button class="icon-button">
+            <span class="material-symbols-outlined">tune</span>
+            Filter
+        </button>
+        <button class="icon-button">
+            <span class="material-symbols-outlined">grid_view</span>
+        </button>
+        <button class="icon-button">
+            <span class="material-symbols-outlined">view_agenda</span>
+        </button>
+        <div class="divider"></div>
+        <span class="results-text">Showing 1–16 of 32 results</span>
+    </div>
+
+    <div class="right-section">
+        <label for="show-select">Show</label>
+        <input type="text" value="16" class="show-input" readonly />
+
+        <label for="sort-select">Short by</label>
+        <select id="sort-select" class="sort-select">
+            <option>Default</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+        </select>
+    </div>
+</div>
 
 <div class="cards">
     @@include('./_card.html', {
@@ -358,7 +391,8 @@
 </div>
 
 
-
+@@include('../components/_advantages.html', {
+})
 
 
 @@include('../components/_footer.html', {

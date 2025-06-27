@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/page2.css" />
+    <link rel="stylesheet" href="assets/css/page3.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -74,6 +74,127 @@
             </p>
         </div>
     </div>
+</div>
+<div class="product-tabs-container">
+    <div class="product-tabs-header">
+        <div class="tabs-wrapper">
+            <div class="tab-title active">Description</div>
+            <div class="tab-title">Additional Information</div>
+            <div class="tab-title">Reviews [5]</div>
+        </div>
+    </div>
+
+    <div class="product-tabs-content">
+        <div class="tab-content active">
+            <p>Employing the raw, wayward spirit of rock 'n' roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+            <p>Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boosts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+
+            <div class="tab-images">
+                <img src="/assets/images/WhiteSofa1.webp" alt="Product image 1">
+                <img src="/assets/images/Group 106.webp" alt="Product image 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-name"><h1>Related Products</h1></div>
+<div class="cards">
+    @@include('./_card.html', {
+    "title": "Syltherine",
+    "description": "Stylish cafe chair",
+    "price": "Rp 2.500.000",
+    "old_price": "Rp 3.500.000",
+    "discount": "30",
+    "circle-opacity": "1",
+    "image": "/assets/images/card1.webp",
+    "circle-text": "-30%",
+    "circle-color": "",
+
+    "button-padding-x": "50px",
+    "button-padding-y": "15px",
+    "button-border-radius": "0px",
+    "button-tittle": "Add to cart",
+    "button-background-color": "white",
+    "button-font-size": "16px",
+    "button-border-color": "none",
+    "button-color": "#ffb700"
+    })
+
+    @@include('./_card.html', {
+    "title": "Leviosa",
+    "description": "Stylish cafe chair",
+    "price": "Rp 2.500.000",
+    "old_price": "",
+    "discount": "30",
+    "circle-opacity": "0",
+    "image": "/assets/images/card2.webp",
+    "circle-text": "-30%",
+    "circle-color": "",
+
+    "button-padding-x": "50px",
+    "button-padding-y": "15px",
+    "button-border-radius": "0px",
+    "button-tittle": "Add to cart",
+    "button-background-color": "white",
+    "button-font-size": "16px",
+    "button-border-color": "none",
+    "button-color": "#ffb700"
+    })
+
+    @@include('./_card.html', {
+    "title": "Lolito",
+    "description": "Luxury big sofa",
+    "price": "Rp 7.000.000",
+    "old_price": "Rp 14.000.000",
+    "discount": "30",
+    "circle-opacity": "1",
+    "image": "/assets/images/card3.webp",
+    "circle-text": "-50%",
+    "circle-color": "",
+
+    "button-padding-x": "50px",
+    "button-padding-y": "15px",
+    "button-border-radius": "0px",
+    "button-tittle": "Add to cart",
+    "button-background-color": "white",
+    "button-font-size": "16px",
+    "button-border-color": "none",
+    "button-color": "#ffb700"
+    })
+
+    @@include('./_card.html', {
+    "title": "Respira",
+    "description": "Outdoor bar table and stool",
+    "price": "Rp 500.000",
+    "old_price": "",
+    "discount": "30",
+    "circle-opacity": "1",
+    "image": "/assets/images/card4.webp",
+    "circle-text": "New",
+    "circle-color": "#47A76A",
+
+    "button-padding-x": "50px",
+    "button-padding-y": "15px",
+    "button-border-radius": "0px",
+    "button-tittle": "Add to cart",
+    "button-background-color": "white",
+    "button-font-size": "16px",
+    "button-border-color": "none",
+    "button-color": "#ffb700"
+    })
+</div>
+
+
+<div class="ShowMore">
+    @@include('./_button.html', {
+    "padding-x": "90px",
+    "padding-y": "18px",
+    "border-radius": "0px",
+    "tittle": "Show More",
+    "color": "#ffb700",
+    "font-size": "16px",
+    "border-color": "#ffb700",
+    })
 </div>
 @@include('../components/_footer.html', {
 })

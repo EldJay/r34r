@@ -9,7 +9,11 @@
 <body>
 @@include('../components/_header.html', {
 })
-
+@@include('../components/_navigate.html', {
+"title": "Product Comparison",
+"text": "Comparison ",
+"opacity": "1"
+})
 <div class="container">
     <div class="sidebar">
         <p class="sidebar-title">Go to Product<br>page for more<br>Products</p>
@@ -200,7 +204,8 @@
                 })</td>
     </tr>
 </table>
-
+@@include('../components/_advantages.html', {
+})
 @@include('../components/_footer.html', {
 })
 </body>

@@ -12,11 +12,17 @@
 // ==== 4. Components ====
 @use 'components/button';
 @use 'components/card';
+@use 'components/navigate';
 @use 'components/header';
 @use 'components/_page1.scss';
 @use 'components/footer';
+@use 'components/_page2.scss';
 @use 'components/_page3.scss';
 @use 'components/_page4.scss';
+@use 'components/_page5.scss';
+@use 'components/_page6.scss';
+@use 'components/advantages';
+
 
 body {
   background-color: white;

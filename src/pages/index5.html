@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/page5.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+@@include('../components/_header.html', {
+})
+@@include('../components/_navigate.html', {
+"title": "Cart",
+"text": "Cart",
+"opacity": "1"
+})
+
+<div class="cart-container">
+    <div class="cart-table">
+        <div class="cart-header">
+            <div>Product</div>
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Subtotal</div>
+            <div></div>
+        </div>
+
+        <div class="cart-item">
+            <div class="product-info">
+                <img src="assets/images/smallDarkSofa.webp" alt="sofa" />
+                <span style="color: #9f9f9f;">Asgaard sofa</span>
+            </div>
+            <div style="color: #9f9f9f;" class="product-price">Rs. 250,000.00</div>
+            <div class="product-quantity">
+                <input type="number" value="1" />
+            </div>
+            <div class="product-subtotal">Rs. 250,000.00</div>
+            <div class="product-remove">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
+                     style="fill:#FAB005;">
+                    <g fill="#fab005" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M28,11c-1.105,0 -2,0.895 -2,2v1h-13c-1.104,0 -2,0.896 -2,2c0,1.104 0.896,2 2,2h1.16016l2.54102,30.49805c0.256,3.085 2.88447,5.50195 5.98047,5.50195h18.63672c3.096,0 5.72347,-2.41695 5.98047,-5.50195l2.54102,-30.49805h1.16016c1.104,0 2,-0.896 2,-2c0,-1.104 -0.896,-2 -2,-2h-13v-1c0,-1.105 -0.895,-2 -2,-2z"></path></g></g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <h2>Cart Totals</h2>
+        <div class="summary-line">
+            <span>Subtotal</span>
+            <span class="grey">Rs. 250,000.00</span>
+        </div>
+        <div class="summary-line total">
+            <span>Total</span>
+            <span class="gold">Rs. 250,000.00</span>
+        </div>
+        <button class="checkout-btn">Check Out</button>
+    </div>
+</div>
+
+
+@@include('../components/_advantages.html', {
+})
+@@include('../components/_footer.html', {
+})
+</body>
+</html>

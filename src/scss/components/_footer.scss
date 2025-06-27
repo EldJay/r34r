@@ -1,5 +1,4 @@
 .footer {
-  background-color: #f9f9f9;
   padding: 60px 40px 30px;
   color: #333;
 }
@@ -71,43 +70,43 @@
   color: #000;
 }
 
+.newsletter-column {
+  flex: 1;
+}
+
 .newsletter-form {
   display: flex;
+  align-items: flex-end; /* Выравниваем элементы по нижнему краю */
+  margin-left: 40px;
+  gap: 10px; /* Добавляем промежуток между элементами */
 }
 
 .newsletter-form input {
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  font-size: 14px;
-  margin-bottom: 10px;
+  padding: 10px 0; /* Уменьшаем вертикальный padding */
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
+  font-size: 14px;
+  flex-grow: 1; /* Позволяет полю ввода занимать все доступное пространство */
+  outline: none;
+  background: transparent;
+  height: 40px; /* Фиксированная высота */
 }
 
 .newsletter-form button {
-  padding: 12px 20px;
-  height: 42px;
-  margin-left: 10px;
-  color: black;
+  padding: 10px 20px;
+  background: none;
   border: none;
-  border-bottom: 2px solid #000000;
-  cursor: pointer;
+  border-bottom: 2px solid #000;
+  color: #000;
   font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  height: 40px; /* Такая же высота как у input */
+  white-space: nowrap; /* Запрещаем перенос текста */
   transition: all 0.3s ease;
 }
 
 .newsletter-form button:hover {
-  background-color: #9f9f9f;
-  border-bottom-color: #c5c5c5;
-}
-
-.footer-copyright {
-  border-top: 1px solid #eee;
-  padding-top: 20px;
-  text-align: left;
-  color: #666;
-  font-size: 14px;
-  max-width: 1400px;
-  margin: 0 auto;
-  font-weight: bold;
+  color: #555;
+  border-bottom-color: #555;
 }
